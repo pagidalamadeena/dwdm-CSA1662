@@ -1,0 +1,12 @@
+# Data
+x <- c(1, 2, 3, 4, 5)
+y <- c(2, 3, 5, 7, 11)
+
+# Correlation coefficient (pearson)
+cor_coef <- cor(x, y, method = "pearson")
+cat("Correlation Coefficient:", cor_coef, "\n")
+cor_test <- cor.test(x, y)
+
+# Print correlation test results
+cat("Correlation Test Results:", "\n")
+print(cor_test)
